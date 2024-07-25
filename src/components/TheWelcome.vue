@@ -40,7 +40,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <span>eslint、prettier</span>
   </WelcomeItem>
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <CommunityIcon />
     </template>
@@ -54,5 +54,5 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Support Vue</template>
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
+  </WelcomeItem> -->
 </template>
