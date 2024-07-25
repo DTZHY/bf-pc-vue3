@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="https://bip.bgyfw.com/ui-ext/logo/176211d4738429173b69277449e82d60.png"
+    />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">路由1: 参考技术说明</RouterLink>
+        <RouterLink to="/about">路由2: Pinia、Axios使用</RouterLink>
       </nav>
     </div>
   </header>
@@ -32,7 +33,6 @@ header {
 }
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -47,7 +47,6 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
@@ -59,6 +58,9 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
